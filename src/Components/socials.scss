@@ -1,0 +1,66 @@
+.socialLinks {
+  position: fixed;
+  left: 2vw;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .socialLink {
+    width: 2.75rem !important;
+    cursor: pointer;
+    height: 2.75rem !important;
+    grid-column: 2/3;
+    border: 2px solid var(--clr-primary-600) !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    margin: 0.2rem;
+    &:hover svg {
+      color: var(--clr-primary-800);
+    }
+    svg {
+      font-size: 1.8rem;
+      color: var(--clr-primary-600);
+      transition: all 0.2s ease;
+    }
+  }
+  .line {
+    margin-top: 0.6rem;
+    height: 10rem;
+    width: 2px;
+    background-color: var(--clr-primary-600);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .socialLinks {
+    display: none;
+  }
+}
+
+body.changeColor{
+  .socialLink{
+    border-color: var(--clr-primary-800) !important;
+    svg{
+      color: var(--clr-primary-800);
+    }
+  }
+  .line{
+    background-color: var(--clr-primary-800);
+  }
+  .socialLink{
+    border-radius: 45px;
+    display: block;
+    background: linear-gradient(to right, var(--clr-primary-800) 50%, transparent 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
+}
+.socialLink:hover {
+    background-position: left bottom;
+    svg{
+            color: var(--clr-primary-600);
+    }
+  }
+}

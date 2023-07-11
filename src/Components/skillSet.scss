@@ -1,0 +1,32 @@
+.skillContainer {
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+
+  .leftSkill {
+    margin-top: 5rem;
+    .skillHeading {
+      margin-block: 2vh;
+    }
+    .skillText {
+      letter-spacing: 1px;
+    }
+    .skillList {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      list-style: none;
+      li {
+        margin: 3vh 3vh 3rem 0;
+        a {
+          align-items: center;
+          justify-content: flex-start;
+          display: flex;
+          svg {
+            margin-right: 2rem;
+            scale: 1.8;
+          }
+        }
+      }
+    }
+  }
+}

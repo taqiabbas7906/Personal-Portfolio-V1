@@ -1,0 +1,33 @@
+.notFound{
+    width: 100vw;
+    height: 100vh;
+}
+.notFoundContainer{
+    font-size: 15rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    .heading{
+        display: flex;
+        gap: 2rem;
+        img{
+            max-width: 15rem;
+            max-height: 15rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .notFoundContainer{
+        font-size: 10rem;
+        img{
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1.5rem;
+    .contactHeading{
+        margin-top: calc(2vh + 10rem);
+    }
+    .socialLinks.mobile{
+        position: static !important;
+        left: 0 !important;
+        display: none;
+        margin-block: 2rem !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .socialLinks.mobile{
+        display: flex !important;
+    }
+}

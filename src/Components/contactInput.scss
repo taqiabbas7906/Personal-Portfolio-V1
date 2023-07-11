@@ -1,0 +1,92 @@
+.contactInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60rem;
+    .contactTop{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        div{
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            width: 48%;
+            border-radius: 30px;
+            height: 4rem;
+            overflow: hidden;
+            input{
+                margin-left: 1rem;
+                background-color: transparent;
+                border: none;
+                outline:  none;
+                height: 100%;
+                width: 100%;
+                color: var(--clr-neutral-100);
+            }
+        }
+    }
+    .contactMessage{
+        width: 100%;
+        height: 25vh;
+        border-radius: 30px;
+        margin-bottom: 2rem;
+        textarea{
+            margin-top: 1rem;
+            margin-left: 1rem;
+            background-color: transparent;
+            border: none;
+            outline:  none;
+            overflow:hidden;
+            height: 90%;
+            width: 100%;
+            resize: none;
+            color: var(--clr-neutral-100);
+        }
+    }
+    .error{
+        border: 2px solid red;
+    }
+    .cta {
+        border-radius: 45px;
+        display: block;
+        border-color: var(--clr-primary-800);
+        background: linear-gradient(to right, var(--clr-primary-800) 50%, transparent 50%);
+        background-size: 250% 100%;
+        background-position: right bottom;
+        transition: all .2s ease-out;
+      }
+      
+      .cta:hover {
+        background-position: left bottom;
+        span{
+                color: var(--clr-primary-600);
+        }
+      }
+      
+     .cta span {
+        text-align: center;
+        border:  none;
+        letter-spacing: 1px;
+        background-color: transparent;
+        outline: none;
+        line-height: 30px; 
+        color: var(--clr-primary-800);  
+        transition: all .4s ease-out;
+        display: block;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contactInput{
+        width: 100%;
+        .contactTop{
+            flex-direction: column;
+            div{
+                width: 100%;
+                height: 3.5rem;
+            }
+        }
+    }
+  }

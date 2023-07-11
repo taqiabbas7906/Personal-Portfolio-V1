@@ -1,0 +1,24 @@
+.portfolio {
+  display: flex;
+  align-items: center;
+}
+.portfolioContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  .portfolioHeading {
+    margin-top: calc(2vh + 5rem);
+  }
+}
+.portBtn {
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .portfolioContainer {
+    align-items: flex-start;
+  }
+  .portBtn {
+    align-self: center;
+  }
+}

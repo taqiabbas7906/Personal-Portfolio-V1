@@ -1,0 +1,7 @@
+.portfolioGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(18rem , 36rem) );
+    gap: 2rem;
+}

@@ -1,0 +1,83 @@
+.cta{
+    width: 12.5rem;
+    height: 4rem;
+    border-radius: 42px;
+    border: none;
+    a{
+        padding: auto;
+    }
+    letter-spacing: 3px;
+    background-color: transparent;
+    border: 2px solid var(--clr-primary-600);
+    transition: all .4s ease-in-out;
+}
+.cta:hover{
+    background-color: var(--clr-primary-600);
+    a{
+        color: var(--clr-primary-800);
+    }
+}
+.cta.small{
+    width: 7.5rem;
+    height: 3.125rem;
+    .fs-button{
+        font-size: 100%;
+    }
+}
+.cta.fill{
+    border-radius: 45px;
+    display: block;
+    background: linear-gradient(to right, transparent 50%, var(--clr-primary-600) 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
+}
+.cta.fill:hover {
+    background-position: left bottom;
+    a{
+            color: var(--clr-primary-600);
+    }
+  }
+  .cta.fill a {
+    text-align: center;
+    line-height: 30px; 
+    color: var(--clr-primary-800);  
+    transition: all .4s ease-out;
+    display: block;
+}
+.cta.hollow {
+    border-radius: 45px;
+    display: block;
+    background: linear-gradient(to right, var(--clr-primary-600) 50%, transparent 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
+  }
+  
+  .cta.hollow:hover {
+    background-position: left bottom;
+    a{
+            color: var(--clr-primary-800);
+    }
+  }
+  
+ .cta.hollow a {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px; 
+    color: var(--clr-primary-600);  
+    transition: all .4s ease-out;
+    display: block;
+}
+@media only screen and (max-width: 768px) {
+    .cta{
+      margin-inline: auto;
+    }
+    .cta.small{
+        width: 10.5rem;
+        height: 4.125rem;
+        .fs-button{
+            font-size: 150%;
+        }
+    }
+  }

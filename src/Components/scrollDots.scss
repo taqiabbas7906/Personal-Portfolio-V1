@@ -1,0 +1,102 @@
+$color: black;
+.scrollDots {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  margin-right: 3vw;
+  height: 8.125rem;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  top: 40vh;
+}
+.dot {
+  background-color: transparent;
+  border: 2px solid var(--clr-primary-600);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+.dot.active {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@mixin active {
+  background-color: var(--clr-primary-600);
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: none;
+}
+
+body {
+  &.hero {
+    .scrollDots a:nth-child(1) {
+      @include active;
+    }
+  }
+  &.skill {
+    .scrollDots a:nth-child(2) {
+      @include active;
+    }
+  }
+  &.about {
+    .scrollDots a:nth-child(3) {
+      @include active;
+    }
+  }
+  &.portfolio {
+    .scrollDots a:nth-child(4) {
+      @include active;
+    }
+  }
+  &.contact {
+    .scrollDots a:nth-child(5) {
+      @include active;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+ .scrollDots{
+  display: none;
+ }
+}
+
+body.changeColor{
+  .dot{
+    background-color: none;
+    border-color: var(--clr-primary-800);
+  }
+  &.hero {
+    .scrollDots a:nth-child(1) {
+      @include active;
+      background-color: var(--clr-primary-800);
+    }
+  }
+  &.skill {
+    .scrollDots a:nth-child(2) {
+      @include active;
+      background-color: var(--clr-primary-800);
+    }
+  }
+  &.about {
+    .scrollDots a:nth-child(3) {
+      @include active;
+      background-color: var(--clr-primary-800);
+    }
+  }
+  &.portfolio {
+    .scrollDots a:nth-child(4) {
+      @include active;
+      background-color: var(--clr-primary-800);
+    }
+  }
+  &.contact {
+    .scrollDots a:nth-child(5) {
+      @include active;
+      background-color: var(--clr-primary-800);
+    }
+  }
+}

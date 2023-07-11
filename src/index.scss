@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Carme&family=Plus+Jakarta+Sans:wght@800&family=Source+Code+Pro:wght@500&display=swap");
+
+// Custom properties
+:root {
+  --clr-accent-300: #263238;
+  --clr-accent-200: #cfcece;
+
+  --clr-primary-800: #1a1c20;
+  --clr-primary-700: #263238;
+  --clr-primary-600: #00cfff;
+  --clr-primary-500: rgba(0, 207, 255, 0.17);
+  --clr-primary-200: #ebebeb;
+  --clr-primary-100: #ffff;
+
+  --clr-neutral-100: #ffff;
+  --clr-neutral-200: #000000;
+
+  --ff-accent: "Source Code Pro", monospace;
+  --ff-primary: "Plus Jakarta Sans", sans-serif;
+  --ff-neutral: "Carme", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-extraBold: 800;
+
+  --fw-nav: var(--fw-regular);
+  --fw-heading: var(--fw-extraBold);
+  --fw-hello-heading: var(--fw-medium);
+  --fw-body: var(--fw-regular);
+
+  --fs-100: 1rem;
+  --fs-200: 1.125rem;
+  --fs-300: 1.25rem;
+  --fs-400: 1.5rem;
+  --fs-500: 1.875rem;
+  --fs-600: 2.25rem;
+  --fs-700: 3.125rem;
+  --fs-800: 4rem;
+
+  --fs-nav: var(--fs-200);
+  --fs-hello-heading: var(--fs-400);
+  --fs-heading: var(--fs-800);
+  --fs-heading-text: var(--fs-200);
+  --fs-button: var(--fs-200);
+  --fs-scroll: var(--fs-200);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-secondary-heading-text: var(--fs-200);
+  --fs-skill-text: var(--fs-500);
+  --fs-about-text: var(--fs-200);
+  --fs-footer-text: var(--fs-300);
+}
+@media only screen and (max-width: 768px) {
+  :root {
+    --fs-nav: var(--fs-400);
+    --fs-hello-heading: var(--fs-300);
+    --fs-heading: var(--fs-700);
+    --fs-heading-text: var(--fs-300);
+    --fs-button: var(--fs-300);
+    --fs-secondary-heading: var(--fs-600);
+    --fs-secondary-heading-text: var(--fs-300);
+    --fs-skill-text: var(--fs-400);
+    --fs-about-text: var(--fs-300);
+    --fs-footer-text: var(--fs-300);
+  }
+}
+
+// CSS Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+// Utility Classes
+.text-accent-300 {
+  color: var(--clr-accent-300);
+}
+.text-accent-200 {
+  color: var(--clr-accent-200);
+}
+
+.text-primary-800 {
+  color: var(--clr-primary-800);
+}
+.text-primary-700 {
+  color: var(--clr-primary-700);
+}
+.text-primary-600 {
+  color: var(--clr-primary-600);
+}
+.text-primary-500 {
+  color: var(--clr-primary-500);
+}
+.text-primary-200 {
+  color: var(--clr-primary-200);
+}
+.text-primary-100 {
+  color: var(--clr-primary-100);
+}
+
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.text-neutral-200 {
+  color: var(--clr-neutral-200);
+}
+
+.bg-accent-300 {
+  background-color: var(--clr-accent-300);
+}
+.bg-accent-200 {
+  background-color: var(--clr-accent-200);
+}
+
+.bg-primary-800 {
+  background-color: var(--clr-primary-800);
+}
+.bg-primary-700 {
+  background-color: var(--clr-primary-700);
+}
+.bg-primary-600 {
+  background-color: var(--clr-primary-600);
+}
+.bg-primary-500 {
+  background-color: var(--clr-primary-500);
+}
+.bg-primary-200 {
+  background-color: var(--clr-primary-200);
+}
+.bg-primary-100 {
+  background-color: var(--clr-primary-100);
+}
+
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+.bg-neutral-200 {
+  background-color: var(--clr-neutral-200);
+}
+
+.ff-accent {
+  font-family: var(--ff-accent);
+}
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+.ff-neutral {
+  font-family: var(--ff-neutral);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+.fw-extraBold {
+  font-weight: var(--fw-extraBold);
+}
+
+.fs-nav {
+  font-size: var(--fs-nav);
+}
+.fs-hello-heading {
+  font-size: var(--fs-hello-heading);
+}
+.fs-heading {
+  font-size: var(--fs-heading);
+}
+.fs-heading-text {
+  font-size: var(--fs-heading-text);
+}
+.fs-button {
+  font-size: var(--fs-button);
+}
+.fs-scroll {
+  font-size: var(--fs-scroll);
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+.fs-secondary-heading-text {
+  font-size: var(--fs-secondary-heading-text);
+}
+.fs-skill-text {
+  font-size: var(--fs-skill-text);
+}
+.fs-about-text {
+  font-size: var(--fs-about-text);
+}
+.fs-footer-text {
+  font-size: var(--fs-footer-text);
+}
+.link {
+    color: var(--clr-primary-600);
+}
+
+.letterSpace{
+  letter-spacing: 2px;
+}
+.container {
+  --max-width: 1200px;
+  --horizontal-margin: 1rem;
+
+  max-width: min(var(--max-width), 100% - (var(--horizontal-margin) * 2));
+  margin-inline: auto;
+  transition: filter .2s ease;
+}
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
