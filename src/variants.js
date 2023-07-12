@@ -116,8 +116,8 @@ export const leftheroVariants = {
     opacity: 1,
     transition: {
       type: "tween",
-      durationChildren: 0.4,
-      staggerChildren: 0.4,
+      durationChildren: 0.0,
+      staggerChildren: 0.5,
     },
   },
 };
