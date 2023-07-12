@@ -117,7 +117,7 @@ export const leftheroVariants = {
     transition: {
       type: "tween",
       durationChildren: 0.0,
-      staggerChildren: 0.5,
+      staggerChildren: 0.3,
     },
   },
 };
