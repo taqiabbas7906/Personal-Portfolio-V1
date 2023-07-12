@@ -140,8 +140,8 @@ export const rightHeroVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-      durationChildren: 0.5,
-      staggerChildren: 1,
+      durationChildren: 0.0,
+      staggerChildren: 0.5,
     },
   },
 };
