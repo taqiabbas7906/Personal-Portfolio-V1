@@ -13,53 +13,53 @@
     />
     <link rel="icon" href="./favicon.webp" type="image/x-icon" />
     <title>Syed Taqi Abbas | Frontend Developer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .loadingScreen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .loading {
+        transform-origin: top;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        scale: 1.1;
+      }
+      .loader {
+        width: 4rem;
+      }
+      @keyframes logoRotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .logoRotator {
+        height: 7rem;
+        position: absolute;
+        top: -2.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        animation: logoRotation 1s 0.5s ease-in-out infinite;
+      }
+      .circle {
+        width: 0.8rem;
+        height: 0.8rem;
+        background-color: #00cfff;
+        border-radius: 50%;
+      }
+    </style>
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    .loadingScreen {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .loading {
-      transform-origin: top;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      scale: 1.1;
-    }
-    .loader {
-      width: 4rem;
-    }
-    @keyframes logoRotation {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    .logoRotator {
-      height: 7rem;
-      position: absolute;
-      top: -2.5rem;
-      display: flex;
-      flex-direction: column-reverse;
-      animation: logoRotation 1s 0.5s ease-in-out infinite;
-    }
-    .circle {
-      width: 0.8rem;
-      height: 0.8rem;
-      background-color: #00cfff;
-      border-radius: 50%;
-    }
-  </style>
   <body>
     <div id="root">
       <div
