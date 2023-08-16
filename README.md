@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+<div align="center">
+  <img alt="Logo" src="https://www.taqiabbas.me/favicon.webp" width="70" />
+</div>
+<h1 align="center">
+  Taqiabbas.me
+</h1>
+<p align="center">
+  The official portfolio of <a href="https://www.taqiabbas.me" target="_blank">Syed Taqi Abbas</a> built with <a href="https://react.dev/" target="_blank">React Js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![demo](https://gcdnb.pbrd.co/images/aHTmWTyFJcrh.jpg?o=1)
 
-## Available Scripts
+## 🚨 Forking this repo (please read!)
 
-In the project directory, you can run:
+Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
 
-### `npm start`
+I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [React docs](https://react.dev/learn).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### TL;DR
 
-### `npm test`
+Yes, you can fork this repo. Please give me proper credit by linking back to [taqiabbas.me](https://taqiabbas.me). Thanks!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Installation & Set Up
 
-### `npm run build`
+1. Install the React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```sh
+   npm install -g react
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```sh
+   nvm install
+   ```
 
-### `npm run eject`
+3. Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```sh
+   yarn
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the development server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```sh
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Building and Running for Production
 
-## Learn More
+1. Generate a full static production build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```sh
+   npm run build
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Preview the site as it will appear once deployed
 
-### Code Splitting
+   ```sh
+   npm run serve
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Color Reference
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Gunmetal           | ![#263238](https://via.placeholder.com/10/263238?text=+) `#263238` |
+| Light Grey     | ![#cfcece](https://via.placeholder.com/10/cfcece?text=+) `#cfcece` |
+| Eerie Black  | ![#1a1c20](https://via.placeholder.com/10/1a1c20?text=+) `#1a1c20` |
+| Deep Sky Blue         | ![#00cfff](https://via.placeholder.com/10/00cfff?text=+) `#00cfff` |
+| Lightest Grey    | ![#ebebeb](https://via.placeholder.com/10/ebebeb?text=+) `#ebebeb` |
+| White | ![#fff](https://via.placeholder.com/10/fff?text=+) `#fff` |
+| Black        | ![#000](https://via.placeholder.com/10/000?text=+) `#000` |
