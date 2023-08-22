@@ -100,8 +100,8 @@ export const projects = [
     name: "Tesla Website Project",
     tech: "HTML, CSS, JS",
     img: teslaWebsite,
-    github: "https://github.com/taqiabbas7906/tesla-landing-page",
-    link: "/NotFound",
+    github: "https://github.com/taqiabbas7906/tesla-landing-page-project",
+    link: "https://tesla-landing-page-project.vercel.app/",
   },
   {
     id: 1,
