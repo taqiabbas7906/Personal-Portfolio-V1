@@ -101,7 +101,7 @@ export const projects = [
     name: "Brainware Website Project",
     tech: "React JS, Tailwind CSS",
     img: brainwareWebsite,
-    github: "https://github.com/taqiabbas7906/tesla-landing-page-project",
+    github: "https://github.com/taqiabbas7906/Brainware.git",
     link: "https://brainware-nine.vercel.app/",
   },
   {
