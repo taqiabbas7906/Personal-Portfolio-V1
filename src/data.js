@@ -14,6 +14,7 @@ import { BiLogoBootstrap } from "react-icons/bi";
 import { BiLogoFigma } from "react-icons/bi";
 import teslaWebsite from "./Images/tesla-project.webp";
 import nikeWebsite from "./Images/nike-project.webp";
+import brainwareWebsite from "./Images/brainware-project.webp";
 
 export const pageLinks = [
   {
@@ -97,14 +98,22 @@ export const socialLinks = [
 export const projects = [
   {
     id: 0,
-    name: "Tesla Website Project",
-    tech: "HTML, Tailwind CSS, JS",
-    img: teslaWebsite,
+    name: "Brainware Website Project",
+    tech: "React JS, Tailwind CSS",
+    img: brainwareWebsite,
     github: "https://github.com/taqiabbas7906/tesla-landing-page-project",
-    link: "https://tesla-landing-page-project.vercel.app/",
+    link: "https://brainware-nine.vercel.app/",
   },
   {
     id: 1,
+    name: "Tesla Website Project",
+    tech: "HTML, Tailwind CSS, JS",
+    img: teslaWebsite,
+    github: "https://github.com/taqiabbas7906/Brainware.git",
+    link: "https://tesla-landing-page-project.vercel.app/",
+  },
+  {
+    id: 2,
     name: "Nike Website Project",
     tech: "HTML, Sass, JS",
     img: nikeWebsite,
