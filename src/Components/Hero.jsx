@@ -69,7 +69,7 @@ const Hero = () => {
             variants={leftHeroChildVariants}
             className="heroText | fs-heading-text ff-neutral text-neutral-100"
           >
-            I am a frontend developer and also a occasionally designer I am a
+            I am a Web Developer and also a occasionally designer I am a
             positive, enthusiastic and I will perform highly in my role.
           </motion.p>
           <motion.div variants={leftHeroChildVariants} className="contactBtn">

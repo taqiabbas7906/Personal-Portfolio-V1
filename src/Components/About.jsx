@@ -49,9 +49,8 @@ const About = () => {
           </h3>
           <div className="aboutText | fw-regular fs-about-text ff-neutral text-neutral-100">
             <p>
-              My name is Syed Taqi Abbas and I am 18 years old. I have 2 years
-              of experience in web development, specializing in front-end design
-              with HTML/CSS/JS. My goal is always to create responsive websites
+              My name is Syed Taqi Abbas and I am 20 years old. I have 4 years
+              of experience in web development. My goal is always to create responsive websites
               that look great on any device - which means that I'm extremely
               capable at creating user interfaces that are both visually
               appealing and mobile-friendly.
