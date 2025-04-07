@@ -15,6 +15,7 @@ import { BiLogoFigma } from "react-icons/bi";
 import teslaWebsite from "./Images/tesla-project.webp";
 import nikeWebsite from "./Images/nike-project.webp";
 import brainwareWebsite from "./Images/brainware-project.webp";
+import zentryWebsite from "./Images/zentry-project.PNG";
 
 export const pageLinks = [
   {
@@ -98,6 +99,14 @@ export const socialLinks = [
 export const projects = [
   {
     id: 0,
+    name: "Zentry Website Project",
+    tech: "React JS, Tailwind CSS, GSAP",
+    img: zentryWebsite,
+    github: "https://github.com/taqiabbas7906/Zentry.git",
+    link: "https://zentry-drab.vercel.app/",
+  },
+  {
+    id: 1,
     name: "Brainware Website Project",
     tech: "React JS, Tailwind CSS",
     img: brainwareWebsite,
@@ -105,7 +114,7 @@ export const projects = [
     link: "https://brainware-nine.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     name: "Tesla Website Project",
     tech: "HTML, Tailwind CSS, JS",
     img: teslaWebsite,
@@ -113,7 +122,7 @@ export const projects = [
     link: "https://tesla-landing-page-project.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Nike Website Project",
     tech: "HTML, Sass, JS",
     img: nikeWebsite,
